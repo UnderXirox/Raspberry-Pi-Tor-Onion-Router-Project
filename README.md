@@ -2,6 +2,10 @@
 
 Raspberry Pi 3 Onion Project est un système d'exploitation serveur conçu pour la protection de la vie privée. Il rend l'anonymat en ligne possible automatiquement à l'échelle de bureau sur le réseau Tor. Un iptables est reconfiguré à l'intérieur de Raspbiane, offrant une protection contre les fuites IP. Raspberry Pi 3 Onion Project est conçu pour fonctionner sur Raspberry Pi 3.
 
+# Download
+
+**[Download anonymous OS Raspberry Pi 3](https://github.com/teeknofil/Raspberry-Pi-Tor-Onion-Router-Project/settings/Downloads/IMG_RASPBIAN_TOR_ONION_ROUTER/raspbian_tor_onion_router.img)**
+
 ## Hardware
 
 [**Kit complet**](https://www.amazon.fr/gp/product/B01CI5879A/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1642&creative=6746&creativeASIN=B01CI5879A&linkCode=as2&tag=hgh0c-21)
@@ -41,9 +45,7 @@ Je vous conseil [le boîtier officiel de la Raspberry Pi Foundation](https://www
 
 [![boitiers de la Raspberry Pi 2 et 3](http://nsa38.casimages.com/img/2017/01/21/170121064340139651.jpg)](https://www.amazon.fr/gp/product/B010180JMO/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1642&creative=6746&creativeASIN=B010180JMO&linkCode=as2&tag=hgh0c-21)
 
-## Download
 
-[Download anonymous OS Raspberry Pi 3](https://github.com/teeknofil/Raspberry-Pi-Tor-Onion-Router-Project/settings/Downloads/IMG_RASPBIAN_TOR_ONION_ROUTER/raspbian_tor_onion_router.img)
 
 ## Mot de passe par défaut. 
 
