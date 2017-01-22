@@ -1,0 +1,87 @@
+!/bin/bash
+# Raspberry Pi 3 Onion Project
+echo "More info: https://github.com/teeknofil/Raspberry_Pi_Onion_Project";
+
+#### ETC DIRECTORY
+
+## Remove apt proxy
+
+if [ -f /apt/apt.conf.d/apt.conf.bak ]; then
+	mv /apt/apt.conf.d/apt.conf.bak  /apt/apt.conf.d/apt.conf  
+elif [ -f /apt/apt.conf.d/apt.conf ]; then
+	rm /apt/apt.conf.d/apt.conf
+fi
+
+if [ -f /etc/default/hostapd ]; then
+	mv /etc/default/hostapd.bak /etc/default/hostapd  
+fi
+
+if [ -f /etc/default/isc-dhcp-server ]; then
+	mv /etc/default/isc-dhcp-server.bak /etc/default/isc-dhcp-server  
+fi
+
+if [ -f /etc/dhcp/dhcpd.bak ]; then
+	/etc/dhcp/dhcpd.conf.bak mv /etc/dhcp/dhcpd.conf  
+fi
+
+if [ -f /etc/hostapd/hostapd.conf ]; then
+	/etc/hostapd/hostapd.conf.bak mv /etc/hostapd/hostapd.conf  
+fi
+
+if [ -f /etc/hosts.bak ]; then
+	mv /etc/hosts.bak /etc/hosts 
+fi
+
+if [ -f /etc/hostname.bak ]; then
+	mv /etc/hostname.bak /etc/hosts 
+fi
+
+if [ -f /etc/init.d/iptables-tor-router ]; then
+	rm /etc/init.d/iptables-tor-router 
+fi
+
+if [ -f /etc/network/interfaces.bak ]; then
+	mv /etc/network/interfaces.bak /etc/network/interfaces  
+fi
+
+
+if [ -f /etc/sysctl.d/ipv4-forward-disable.conf.bak ]; then
+	mv /etc/sysctl.d/ipv4-forward-disable.conf.bak /etc/sysctl.d/ipv4-forward-disable.conf	
+elif [ -f /etc/sysctl.d/ipv4-forward-disable.conf ]; then
+	rm /etc/sysctl.d/ipv4-forward-disable.conf
+fi
+
+if [ -f /etc/sysctl.d/ipv6-disable.conf.bak ]; then
+	mv /etc/sysctl.d/ipv6-disable.conf.bak /etc/sysctl.d/ipv6-disable.conf	
+elif [ -f /etc/sysctl.d/ipv6-disable.conf ]; then
+	rm /etc/sysctl.d/ipv6-disable.conf
+fi
+
+if [ -f /etc/sysctl.d/tcp_timestamps.conf.bak ]; then
+	mv /etc/sysctl.d/tcp_timestamps.conf.bak /etc/sysctl.d/tcp_timestamps.conf	
+elif [ -f /etc/sysctl.d/tcp_timestamps.conf ]; then
+	rm /etc/sysctl.d/tcp_timestamps.conf
+fi
+
+if [ -f /etc/tor/torrc.bak ]; then
+	mv /etc/tor/torrc.bak /etc/tor/torrc 
+fi
+
+#### /USR DIRECTORY
+
+if [ -f /usr/bin/iptables-tor-router ]; then
+	rm /usr/bin/iptables-tor-router
+fi
+
+#### /VAR DIRECTORY
+
+if [ -f /var/lib/dbus/machine-id.bak ]; then
+	mv  /var/lib/dbus/machine-id.bak /var/lib/dbus/machine-id
+elif [ -f /var/lib/dbus/machine-id ]; then
+	rm /var/lib/dbus/machine-id
+fi
+
+
+
+
+

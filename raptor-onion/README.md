@@ -1,0 +1,2 @@
+# Raspberry_Pi_3_Onion_Project
+Raspberry Pi 3 Onion Project is a server operating system designed for privacy It makes online anonymity automatic, and desktop-wide use of the Tor network. A reconfigured Raspbian base for run Raspberry Pi 3 machines, providing a substantial layer of protection from IP leaks. Pre-installed, pre-configured applications are ready for use. Raspberry Pi 3 Onion Project is the only developed OS designed to be Raspberry Pi 3 and paired with Tor.

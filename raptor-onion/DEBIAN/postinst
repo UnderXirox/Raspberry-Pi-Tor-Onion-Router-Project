@@ -1,0 +1,22 @@
+#!/bin/bash
+# Raspberry Pi 3 Onion Project
+
+service hostapd start
+service isc-dhcp-server start
+update-rc.d hostapd enable
+update-rc.d isc-dhcp-server enable
+
+touch /var/log/tor/notices.log
+chown debian-tor /var/log/tor/notices.log
+chmod 644 /var/log/tor/notices.log
+
+systemctl start tor
+systemctl enable tor
+
+update-rc.d iptables-tor-router defaults
+chmod +x /usr/bin/iptables-tor-router
+bash /usr/bin/iptables-tor-router
+sh -c "iptables-save > /etc/iptables-tor-router"
+
+echo "$(tput setaf 6)Setup complete!$(tput sgr0)"
+echo "$(tput setaf 6)Reboot please $(tput sgr0) !"

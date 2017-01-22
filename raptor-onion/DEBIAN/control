@@ -1,0 +1,10 @@
+Package: raptor-onion
+Version: 1.0.0
+Priority: optional
+Architecture: all
+Depends: tor, isc-dhcp-server, hostapd
+Maintainer: Teeknofil <teeknofil.dev@gmail.com>
+Homepage: <https://github.com/teeknofil/Raspberry_Pi_Tor_Onion_Router_Project> 
+Vcs-Browser: https://github.com/teeknofil/Raspberry_Pi_Tor_Onion_Router_Project
+Vcs-Git: https://github.com/teeknofil/Raspberry_Pi_Tor_Onion_Router_Project.git
+Description: Install raspberry pi 3 as router TOR

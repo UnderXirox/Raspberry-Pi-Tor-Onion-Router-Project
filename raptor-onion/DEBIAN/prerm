@@ -1,0 +1,7 @@
+#!/bin/bash
+update-rc.d hostapd disable stop
+update-rc.d hostapd disable disable
+update-rc.d isc-dhcp-server stop
+update-rc.d isc-dhcp-server disable
+update-rc.d iptables-tor-router stop
+update-rc.d iptables-tor-router remove

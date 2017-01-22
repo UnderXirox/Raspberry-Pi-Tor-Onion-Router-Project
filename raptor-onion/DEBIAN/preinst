@@ -1,0 +1,89 @@
+#!/bin/bash
+# Raspberry Pi 3 Onion Project
+echo "More info: https://github.com/teeknofil/Raspberry_Pi_Onion_Project";
+
+echo "$(tput setaf 2)
+                   ..
+                  ,:
+          .      ::
+          .:    :2.
+           .:,  1L
+            .v: Z, ..::,
+             :k:N.Lv:
+              22ukL
+              JSYk.$(tput bold ; tput setaf 7)
+             ,B@B@i
+             BO@@B@.
+           :B@L@Bv:@7
+         .PB@iBB@  .@Mi
+       .P@B@iE@@r  . 7B@i
+      5@@B@:NB@1$(tput setaf 5) r  ri:$(tput bold ; tput setaf 7)7@M
+    .@B@BG.OB@B$(tput setaf 5)  ,.. .i, $(tput bold ; tput setaf 7)MB,
+    @B@BO.B@@B$(tput setaf 5)  i7777,    $(tput bold ; tput setaf 7)MB.
+   PB@B@.OB@BE$(tput setaf 5)  LririL,.L. $(tput bold ; tput setaf 7)@P
+   B@B@5iB@B@i$(tput setaf 5)  :77r7L, L7 $(tput bold ; tput setaf 7)O@
+   @B1B27@B@B,$(tput setaf 5) . .:ii.  r7 $(tput bold ; tput setaf 7)BB
+   O@.@M:B@B@:$(tput setaf 5) v7:    ::.  $(tput bold ; tput setaf 7)BM
+   :Br7@L5B@BO$(tput setaf 5) irL: :v7L. $(tput bold ; tput setaf 7)P@,
+    7@,Y@UqB@B7$(tput setaf 5) ir ,L;r: $(tput bold ; tput setaf 7)u@7
+     r@LiBMBB@Bu$(tput setaf 5)   rr:.$(tput bold ; tput setaf 7):B@i
+       FNL1NB@@@@:   ;OBX
+         rLu2ZB@B@@XqG7$(tput sgr0 ; tput setaf 2)
+            . rJuv::
+
+            $(tput setaf 2)RASPBERRY PI ONION ROUTER PROJECT
+           $(tput bold ; tput setaf 5)by @Teeknofile | contact: teeknofil.dev@gmail.com $(tput sgr0)
+"
+
+echo "$(tput setaf 6)This script will auto-setup an Onion Pi Tor proxy for you.$(tput sgr0)"
+read -p "$(tput bold ; tput setaf 2)Press [Enter] to begin, [Ctrl-C] to abort...$(tput sgr0)"
+
+#### ETC DIRECTORY
+
+## Install apt
+if [ -f /apt/apt.conf.d/apt.conf ]; then
+	mv  /apt/apt.conf.d/apt.conf   /apt/apt.conf.d/apt.conf.bak
+fi
+
+if [ -f /etc/default/isc-dhcp-server ]; then
+	mv /etc/default/isc-dhcp-server  /etc/default/isc-dhcp-server.bak
+fi
+
+if [ -f /etc/default/hostapd ]; then
+	mv /etc/default/hostapd  /etc/default/ihostapd.bak
+fi
+
+## Backup configuration file for ISC dhcpd for Debian
+
+if [ -f /etc/dhcp/dhcpd.conf ]; then
+	mv /etc/dhcp/dhcpd.conf  /etc/dhcp/dhcpd.conf.bak
+fi
+
+## Backup configuration file for hostapd for Debian
+
+if [ -f /etc/hostapd/hostapd.conf ]; then
+	mv /etc/hostapd/hostapd.conf /etc/hostapd/hostapd.conf.bak
+fi
+
+if [ -f /etc/hosts ]; then
+	mv /etc/hosts /etc/hosts.bak 
+fi
+
+if [ -f /etc/hostname ]; then
+	mv /etc/hostname /etc/hosts.bak 
+fi
+
+if [ -f /etc/network/interfaces ]; then
+	mv /etc/network/interfaces  /etc/network/interfaces.bak
+fi
+
+if [ -f /etc/tor/torrc ]; then
+	mv /etc/tor/torrc /etc/tor/torrc.bak
+fi
+
+#### /VAR DIRECTORY
+
+if [ -f /var/lib/dbus/machine-id ]; then
+	mv  /var/lib/dbus/machine-id   /var/lib/dbus/machine-id.bak
+fi
+
