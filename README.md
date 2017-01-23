@@ -16,9 +16,10 @@ Raspberry Pi 3 Onion Project est un système d'exploitation serveur conçu pour 
 
 [**L’alimentation de la Raspberry Pi 3**](https://www.amazon.fr/gp/product/B01566WOAG/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1642&creative=6746&creativeASIN=B01566WOAG&linkCode=as2&tag=hgh0c-21)
 
-[La Raspberry Pi 3 a besoin d’une alimentation USB.
-![Image](http://nsa37.casimages.com/img/2017/01/21/170121062517249292.jpg)]
-(https://www.amazon.fr/gp/product/B01566WOAG/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1642&creative=6746&creativeASIN=B01566WOAG&linkCode=as2&tag=hgh0c-21)
+[La Raspberry Pi 3 a besoin d’une alimentation USB
+![Image](http://nsa37.casimages.com/img/2017/01/21/170121062517249292.jpg)
+](https://www.amazon.fr/gp/product/B01566WOAG/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1642&creative=6746&creativeASIN=B01566WOAG&linkCode=as2&tag=hgh0c-21).
+
 
 Les caractéristiques de [cette  alimentation](https://www.amazon.fr/gp/product/B01566WOAG/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1642&creative=6746&creativeASIN=B01566WOAG&linkCode=as2&tag=hgh0c-21) sont : 5 Volts et 2.5 A minimum.
 
