@@ -56,7 +56,9 @@ Le mot de passe par défaut de Raspbian Tor Onion Router pour le compte pi et la
 Branchement de vos périphériques avec votre Raspberry Pi
 
 1.Insérez votre carte SD dans le connecteur Raspberry Pi dédié
+
 2.Branchez le câble ethernet à la box de votre fournisseur d’accès à internet (FAI)
+
 3. Tapez ces commande :
 <pre>
 sudo apt-get update
