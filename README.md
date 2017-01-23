@@ -54,9 +54,9 @@ Le mot de passe par défaut de Raspbian Tor Onion Router pour le compte pi et la
 ## Installation 
 
 
-1.Branchez le câble ethernet à la box de votre fournisseur d’accès à internet (FAI)
+1)Branchez le câble ethernet à la box de votre fournisseur d’accès à internet (FAI)
 
-2. Tapez ces commande :
+2) Tapez ces commande :
 
 <pre>
 sudo apt-get update
@@ -65,9 +65,9 @@ sudo dpkg -i --force-all raptor-onion.deb
 sudo reboot
 </pre>
 
-3.Connectez-vous aux réseau Wi-Fi Wireless-Pi
+3)Connectez-vous aux réseau Wi-Fi Wireless-Pi
 
-4.Vous êtes Anonyme ! ;) 
+4)Vous êtes Anonyme ! ;) 
 
 ## Se connecter à son Raspberry Pi 3 en SSH
 
