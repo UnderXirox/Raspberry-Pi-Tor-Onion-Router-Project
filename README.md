@@ -4,7 +4,7 @@ Raspberry Pi 3 Onion Project est un système d'exploitation serveur conçu pour 
 
 # Download
 
-**[Download anonymous OS Raspberry Pi 3](https://github.com/teeknofil/Raspberry-Pi-Tor-Onion-Router-Project/settings/Downloads/IMG_RASPBIAN_TOR_ONION_ROUTER/raspbian_tor_onion_router.img)**
+**[Download anonymous OS Raspberry Pi 3](https://raw.githubusercontent.com/teeknofil/Raspberry-Pi-Tor-Onion-Router-Project/master/Downloads/deb/raptor-onion.deb)**
 
 ## Hardware
 
@@ -57,8 +57,15 @@ Branchement de vos périphériques avec votre Raspberry Pi
 
 1.Insérez votre carte SD dans le connecteur Raspberry Pi dédié
 2.Branchez le câble ethernet à la box de votre fournisseur d’accès à internet (FAI)
-3.Connectez-vous aux réseau Wi-Fi Wireless-Pi
-4.Vous êtes Anonyme ! ;) 
+3. Tapez ces commande :
+<pre>
+sudo apt-get update
+sudo apt-get install tor isc-dhcp-server hostapd
+sudo dpkg -i --force-all raptor-onion.deb
+sudo reboot
+</pre>
+4.Connectez-vous aux réseau Wi-Fi Wireless-Pi
+5.Vous êtes Anonyme ! ;) 
 
 ## Se connecter à son Raspberry Pi 3 en SSH
 
@@ -87,13 +94,13 @@ Félicitations, vous venez donc de vous connecter à votre micro-ordinateur avec
 
 
 Démarrer votre Raspberry Pi 3 avant de brancher votre clé USB.  Connectez-vous à votre Raspberry Pi 3.  Il faudra d’abord éditer le fichier wpa_supplicant.conf. Il faut ensuite donner les informations concernant votre box. Configurez le nom de votre box et insérez le mot de passe. Au final, vous devez avoir quelque chose du genre
-```
+<pre>
 network={
-ssid=”<nomDeLaBox>”
-psk=”<cléDeSécurité>”
+ssid=”nomDeLaBox”
+psk=”cléDeSécurité”
 key_mgmt=WPA-PSK
 }
-```
+</pre>
 
 
 En cas de soucis, vous pouvez toujours poser vos questions auxquelles nous serons ravis de répondre.
