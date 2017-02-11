@@ -1,3 +1,9 @@
+## IP FIX
+## Every NUM seconds consider whether to build a new circuit. 
+## (Default: 30 seconds)
+## Confiured 11 minute 
+NewCircuitPeriod 700
+##
 Log notice file /var/log/tor/notices.log
 VirtualAddrNetwork 10.192.0.0/10
 AutomapHostsOnResolve 1
