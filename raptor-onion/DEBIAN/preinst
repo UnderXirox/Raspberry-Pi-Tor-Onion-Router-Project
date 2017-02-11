@@ -41,8 +41,8 @@ read -p "$(tput bold ; tput setaf 2)Press [Enter] to begin, [Ctrl-C] to abort...
 #### ETC DIRECTORY
 
 ## Install apt
-if [ -f /apt/apt.conf.d/apt.conf ]; then
-	mv  /apt/apt.conf.d/apt.conf   /apt/apt.conf.d/apt.conf.bak
+if [ -f /etc/apt/apt.conf.d/apt.conf ]; then
+	mv  /etc/apt/apt.conf.d/apt.conf   /etc/apt/apt.conf.d/apt.conf.bak
 fi
 
 if [ -f /etc/default/isc-dhcp-server ]; then
@@ -51,6 +51,10 @@ fi
 
 if [ -f /etc/default/hostapd ]; then
 	mv /etc/default/hostapd  /etc/default/ihostapd.bak
+fi
+
+if [ -f /etc/sysctl.conf ]; then
+	mv  /etc/sysctl.conf   /etc/sysctl.conf.bak
 fi
 
 ## Backup configuration file for ISC dhcpd for Debian
