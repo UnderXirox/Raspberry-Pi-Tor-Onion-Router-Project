@@ -50,7 +50,7 @@ Je vous conseil [le boîtier officiel de la Raspberry Pi Foundation](https://www
 
 ## Mot de passe par défaut. 
 
-Le mot de passe par défaut de Raspbian Tor Onion Router pour le compte pi et la Wi-Fi est "rasberry".
+Le mot de passe par défaut de Raspbian Tor Onion Router pour le compte pi et la Wi-Fi est "raspberry".
 
 ## Installation 
 
