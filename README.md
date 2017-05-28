@@ -46,7 +46,8 @@ Je vous conseil [le boîtier officiel de la Raspberry Pi Foundation](https://www
 
 [![boitiers de la Raspberry Pi 2 et 3](http://nsa38.casimages.com/img/2017/01/21/170121064340139651.jpg)](https://www.amazon.fr/gp/product/B010180JMO/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1642&creative=6746&creativeASIN=B010180JMO&linkCode=as2&tag=hgh0c-21)
 
-
+Installation et premier démarrage
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6XT6COs3z_Y" frameborder="0" allowfullscreen></iframe>
 
 ## Mot de passe par défaut. 
 
